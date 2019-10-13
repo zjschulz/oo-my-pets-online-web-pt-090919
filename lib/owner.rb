@@ -50,7 +50,7 @@ class Owner
 
   def walk_dogs
     Dog.all.select do |x|
-      x.owner == "happy"
+      x.mood=("happy")
     end
   end
 
