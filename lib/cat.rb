@@ -12,8 +12,9 @@ class Cat
   end
   
   def owner=(name)
-    new_owner = Owner.new(name)
-    @owner = new_owner.name
+    #new_owner = Owner.new(name)
+    @owner = name
+    #new_owner.name
   end
   
   def mood=(feel)
