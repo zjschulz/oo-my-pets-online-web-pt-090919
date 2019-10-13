@@ -29,8 +29,8 @@ class Owner
  end
  
   def cats
-    Cat.all.select do |cats|
-      cats if cats.owner.name == self.name
+    Cat.all.select do |x|
+      cats.owner.name == self.name
     end
   end
 
