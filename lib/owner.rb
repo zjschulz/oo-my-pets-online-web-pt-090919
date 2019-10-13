@@ -55,6 +55,9 @@ class Owner
   end
 
   def feed_cats
+    Cat.all.select do |x|
+      x.mood=("happy")
+    end
   end
   
   def sell_pets
